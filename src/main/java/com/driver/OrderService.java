@@ -9,8 +9,8 @@ import java.util.List;
 @Service
 public class OrderService {
 
-    @Autowired
-    OrderRepository orderRepository;
+
+    OrderRepository orderRepository = new OrderRepository();
     public static String addOrder(Order order) {
 
         return OrderRepository.addOrder(order);
